@@ -9,4 +9,9 @@ public class TestFaultTwo {
         int pos = FaultTwo.findLast(new int[] {2, 3, 5, 8}, 2);
         Assert.assertEquals(1, pos);
     }
+
+    @Test(expected = NullPointerException.class)
+    public void expectetException() {
+        int pos = FaultTwo.findLast(null, 1);
+    }
 }
