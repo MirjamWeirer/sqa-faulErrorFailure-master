@@ -20,7 +20,7 @@ public class TestFaultOne {
         //Error vorhanden: i startet bei 1, nicht bei 0
         //Failure: nein (weil Resultat troztdem, stimmt)
         int res = FaultOne.numZero(new int []{0,1,2,3});
-        Assert.assertEquals(0,res);
+        Assert.assertEquals(1,res);
     }
 
     @Test(expected = NullPointerException.class)
